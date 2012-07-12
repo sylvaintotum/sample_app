@@ -4,8 +4,9 @@ describe "Static pages" do
 
   describe "Home page" do
 
+    before {visit root_path}
+
     it "should have the h1 'Sample App'" do
-      visit root_path
       page.should have_selector('h1', text: 'Sample App')
     end
   end

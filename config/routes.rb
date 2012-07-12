@@ -5,6 +5,7 @@ SampleAmm::Application.routes.draw do
   match '/help', to: 'static_page#help'
   match '/about', to: 'static_page#about'
   match '/contact', to: 'static_page#contact'
+  match '/test', to: 'static_page#test'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
